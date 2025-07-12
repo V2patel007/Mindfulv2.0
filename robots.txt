@@ -1,0 +1,20 @@
+User-agent: *
+# Allow full access to important public pages
+Allow: /
+
+# Block sensitive backend and unnecessary pages from indexing
+Disallow: /wp-admin/
+Disallow: /wp-login.php
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /thank-you/
+Disallow: /privacy-policy/
+Disallow: /terms-and-conditions/
+Disallow: /track-order/
+Disallow: /cgi-bin/
+
+# Optional: Slow down crawling if server performance is an issue
+# Crawl-delay: 10
+
+# Sitemap for search engine indexing
+Sitemap: https://www.mincc.ca/sitemap.xml

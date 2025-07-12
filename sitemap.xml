@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.mincc.ca/</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://www.mincc.ca/about</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Programs Page -->
+  <url>
+    <loc>https://www.mincc.ca/programs</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.90</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Curriculum Page -->
+  <url>
+    <loc>https://www.mincc.ca/curriculum</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://www.mincc.ca/contact</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.70</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Gallery Page (if available) -->
+  <url>
+    <loc>https://www.mincc.ca/gallery</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.75</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Blog Page (optional) -->
+  <url>
+    <loc>https://www.mincc.ca/blog</loc>
+    <lastmod>2025-07-07</lastmod>
+    <priority>0.65</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+</urlset>
