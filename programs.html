@@ -268,15 +268,46 @@ margin: 0rem !important;
           <div class="container-large">
             <div class="form-component">
               <div class="w-form">
-                <form id="email-form" name="email-form" data-name="Email Form">
+                 <form id="email-form" name="email-form" data-name="Email Form" method="POST" action="https://script.google.com/macros/s/AKfycbw0F5Se2cPxRpIg6k6nNl9cdYvITieFSF_GzoCuf7xLzid9Zk7E5JNe4_ozlBqPaUS0TA/exec" class="form" data-wf-page-id="680c8e7c27b16308a50f895e" data-wf-element-id="215b2fb9-cc7a-718b-456d-c2089f46c716">
                   <div>
-                    <div class="form-input-wrapper"><label for="Full-name-2" class="field-label">Full Name*</label><input class="text-field w-input" maxlength="256" name="Name" data-name="Full Name 2" placeholder="" type="text" id="Full-name-2" required=""></div>
-                    <div class="form-input-wrapper"><label for="Email-4" class="field-label">Email*</label><input class="text-field w-input" maxlength="256" name="Email" data-name="Email 4" placeholder="" type="email" id="Email-4" required=""></div>
-                    <div class="form-input-wrapper"><label for="Contact-number-2" class="field-label">Contact Number*</label><input class="text-field w-input" maxlength="256" name="Phone" data-name="Contact Number 2" placeholder="" type="tel" id="Contact-number-2" required=""></div>
-                    <div class="form-input-wrapper"><label for="Age-2" class="field-label">Child's Date Of Birth*</label><input class="text-field w-input" maxlength="256" name="Age" data-name="Age 2" placeholder="" type="text" id="Age-2" required=""></div>
-                    <div class="form-input-wrapper"><label for="days-dates-2" class="field-label">Potential Start Dates &amp; days Required*</label><input class="text-field w-input" maxlength="256" name="BkingDates" data-name="Days Dates 2" placeholder="" type="text" id="days-dates-2" required=""></div>
-                    <div class="margin-top margin-small"><label class="w-checkbox is-0accept"><input type="checkbox" id="checkbox-2" name="Consent" data-name="Checkbox 2" class="w-checkbox-input" required><span class="is-paragraph w-form-label" for="checkbox-2">I Consent to Receive SMS Notifications, Alerts &amp; Occasional Marketing Communication from First Milestones Education &amp; Childcare. Message frequency varies. Message &amp; data rates may apply. Text HELP to Number needs to be added for assistance. You can reply STOP to unsubscribe at any time</span></label></div>
-                  </div><input type="submit" data-wait="Please wait..." class="btn-primary is--submit w-button" value="Submit">
+                    <div class="form-input-wrapper">
+                      <label for="Full-name" class="field-label">Child's Full Name*</label>
+                      <input class="text-field w-input" maxlength="256" name="Name" data-name="Full Name" placeholder="" type="text" id="Full-name" required>
+                    </div>
+                    <div class="form-input-wrapper">
+                      <label for="Age" class="field-label">Child's Date Of Birth*</label>
+                      <input class="text-field w-input" maxlength="256" name="Age" data-name="Age" placeholder="" type="date" id="Age"
+                        required>
+                    </div>
+                    
+                     <div class="form-input-wrapper">
+                      <label for="days-dates" class="field-label">Potential Start Dates &amp; Days Required*</label>
+                      <input class="text-field w-input" maxlength="256" name="BkingDates" data-name="Start Dates and Days" placeholder="" type="text" id="days-dates" required>
+                    </div>
+                    
+                    <div class="form-input-wrapper">
+                      <label for="Full-name" class="field-label">Parents' Name*</label>
+                      <input class="text-field w-input" maxlength="256" name="ParentName" data-name="Parent Full Name" placeholder="" type="text" id="Parent Full-name" required>
+                    </div>
+                    <div class="form-input-wrapper">
+                      <label for="Email-3" class="field-label">Email*</label>
+                      <input class="text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="" type="email" id="Email-3" required>
+                    </div>
+                    <div class="form-input-wrapper">
+                      <label for="Contact-number" class="field-label">Contact Number*</label>
+                      <input class="text-field w-input" maxlength="256" name="Phone" data-name="Contact Number" placeholder="" type="tel" id="Contact-number" required>
+                    </div>
+                   
+                    <div class="margin-top margin-small">
+                      <label class="w-checkbox is-0accept">
+                        <input type="checkbox" id="checkbox" name="Consent" data-name="Consent" class="w-checkbox-input" required>
+                        <span class="is-paragraph w-form-label" for="checkbox">I Consent to Receive SMS Notifications, Alerts &amp; Occasional Marketing Communication from Mindful Nurturing Childcare Center. Message frequency varies. Message &amp; data rates may apply. Text HELP for assistance. Reply STOP to unsubscribe.</span>
+                      </label>
+                    </div>
+                  </div>
+            
+        
+                  <input type="submit" data-wait="Please wait..." class="btn-primary is--submit w-button" value="Submit">
                 </form>
             
               </div>
