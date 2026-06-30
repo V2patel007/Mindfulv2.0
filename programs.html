@@ -247,7 +247,7 @@ margin: 0rem !important;
                 </div>
               </div>
             </div>        
-            <!-- <div class="exploare_component">
+            <div class="exploare_component">
               <div id="w-node-d579f5ae-4e06-ba5b-9225-6ecc4d53bf1e-2a7ed64b" class="explore_content-wrapper is-program"><img src="images/Asset_6-removebg-preview.png" loading="lazy" alt="" class="program-img-top"></div>
               <div class="pillar-item_content-wrapper is-program">
                 <div class="pragram_heading-wrapper is-program">
@@ -270,7 +270,7 @@ margin: 0rem !important;
                     <p class="is-paragraph">Encouragement of creativity, critical thinking, and confidence</p></li>
                 </ul>
               </div>
-            </div> -->
+            </div>
           </div>
         </div>
       </section>
@@ -311,6 +311,7 @@ margin: 0rem !important;
                         <span class="is-paragraph w-form-label" for="checkbox">I Consent to Receive SMS Notifications, Alerts &amp; Occasional Marketing Communication from Mindful Nurturing Childcare Center. Message frequency varies. Message &amp; data rates may apply. Text HELP for assistance. Reply STOP to unsubscribe.</span>
                       </label>
                     </div>
+                    <div class="cf-turnstile" data-sitekey="0x4AAAAAADtNj8mXRLv4KHBX"></div>
                   </div>
                   <input type="submit" data-wait="Please wait..." class="btn-primary is--submit w-button" value="Submit">
                 </form>
@@ -362,11 +363,25 @@ margin: 0rem !important;
       </div>
     </section>
   </div>
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <script>
+  function validateTurnstile(form) {
+    const token = form.querySelector('[name="cf-turnstile-response"]')?.value;
+    if (!token) {
+      alert("Please complete the security check before submitting.");
+      return false;
+    }
+    return true;
+  }
+
   document.getElementById("email-form").addEventListener("submit", function (e) {
     e.preventDefault(); // prevent default form submission
 
     const form = e.target;
+    if (!validateTurnstile(form)) {
+      return;
+    }
+
     const formData = new FormData(form);
 
     fetch("https://script.google.com/macros/s/AKfycbxUoOFs91X8PAQNJvb8J8QbhNiYhYDlHQ6adKw0dm9BEYyPQOFL-7HyCspiuo88hh2SVg/exec", {
